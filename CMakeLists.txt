@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 2.8.12)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-enable_testing() # needed on top-level CMakeLists.txt
+include(CTest) # runs enable_testing() which needed on top-level CMakeLists.txt
 
 # Target doc definition
 # The challenge here is that the sub projects must all define a custom target but with different names to avoid
